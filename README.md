@@ -1,4 +1,4 @@
-# Shiv Diagnostic Center
+# Shiv Diagnostic Center Project 🚀
 
 "Shiv Diagnostic Center" is a comprehensive digital solution designed for modern pathology labs. This project aims to revolutionize the management of medical data and enhance the overall efficiency of laboratory operations, addressing the new challenges faced by healthcare, particularly pathology laboratories, in handling vast amounts of medical data.
 
