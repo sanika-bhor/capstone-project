@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shiv Diagnostic Center</title>
+
+    <!-- font awasome cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <!-- css files  -->
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- sanika link start-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css"
+    />
+    <script
+      type="text/JavaScript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox-plus-jquery.min.js"
+    ></script>
+
+    <!-- sanika link end-->
+  </head>
+  <body>
+
+    <!-- header section start  -->
+    <header class="header">
+      <a href="#" class="logo">
+        <img src="./imgs/logo.png" alt="">
+        SHIV<span> Diagnostic Center</span></a>
+
+      <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#about">about</a>
+        <a href="#services">services</a>
+        <a href="#doctors">doctors</a>
+        <a href="#gallery_section">gallery</a>
+        <a href="#reviews">reviews</a>
+        <a href="#book">book</a>
+      </nav>
+     
+
+      <!-- Download Report Button start  -->
+      <a href="./logout.php" class="btn1">logout</a>
+
+      <a href="./showapp.php" class="btn1" >Show Appointment</a>
+      <div id="menu-btn" class="fa-solid fa-bars"></div>
+      <!-- <i id="menu-btn"class="fa-regular fa-bars"></i> -->
+
+
+      <div id="downloadmodal" class="downloadmodal">
+          <!-- Modal content -->
+          <div class="downloadmodal-content">
+              <span class="closedownload" onclick="downloadclose()">&times;</span>
+              <center><h2 class="modeltitle">please Login First</h2> </center>
+          </div>
+         </div> 
+      <!-- Download Report Button end  -->
+
+    </header>
+    <!-- header section end  -->
+
+    <!-- ********************************************************************************************* -->
+
+    <!-- home section start  -->
+    <section class="home" id="home">
+      <div class="image">
+        <img src="./imgs/home_img.png" alt="home-image" />
+      </div>
+
+      <div class="content">
+        <h3> <span style="color: var(--dark-purple);">Shiv Diagnostic: </span><br> Your Health, Our Priority</h3>
+        <p>
+          Discover a healthier you at Shiv Diagnostic Center – where precision meets care. Your well-being, our priority. Experience advanced diagnostics with a touch of compassion.
+        </p>
+        <a href="#footer" class="btn"
+          >Get In Touch <span><i class="fa-solid fa-chevron-right"></i></span
+        ></a>
+      </div>
+    </section>
+    <!-- home section end  -->
+
+    <!-- ********************************************************************************************* -->
+
+    <!-- icons section start  -->
+    <section class="icons-container">
+      <div class="icons">
+        <i class="fas fa-user-md"></i>
+        <h3>10+</h3>
+        <p>doctor's at work</p>
+      </div>
+
+      <div class="icons">
+        <i class="fas fa-users"></i>
+        <h3>200+</h3>
+        <p>satisfied patients</p>
+      </div>
+
+      <div class="icons">
+        <i class="fa-solid fa-hospital-user"></i>
+        <h3>20+</h3>
+        <p>available hospitals</p>
+      </div>
+    </section>
+    <!-- icons section end  -->
+
+    <!-- ********************************************************************************************* -->
+
+    <!-- about us section start  -->
+    <section class="about" id="about">
+      <h1 class="heading">About <span>US</span></h1>
+
+      <div class="row">
+        <div class="image">
+          <img src="./images/img11.jpeg" alt />
+        </div>
+
+        <div class="content">
+          <h3>We take care of your healthy life</h3>
+          <p>
+            Welcome to Shiv Diagnostic Center, where precision meets care. Our state-of-the-art diagnostic services include advanced sonography, Doppler tests, digital X-rays, digital OPG, neurology, and hematology. Our skilled technicians provide accurate results, aiding in timely and personalized healthcare solutions. Explore our comprehensive services designed for your well-being. Your health is our priority!
+          </p>
+          <a href="#about" class="btn" onclick="showabout()" style="border-color: #940b92;"
+          >Read More <span class="fas fa-chevron-right"></span
+        ></a>
+        </div>
+      </div>
+
+      <div id="aboutmodal" class="aboutmodal">
+        <!-- Modal content -->
+        <div class="aboutmodal-content">
+          <span class="close" onclick="closeabout()"> &times;</span>
+          <div class="modalback">
+          </div>
+
+          <center>
+            <a href="./imgs/Pamplet.pdf" download class="btn">Download Pamplet<span class="fas fa-chevron-right"></span
+            ></a>
+          </center>
+        </div>
+      </div>
+    </section>
+    <!-- about us section end  -->
+
+    <!-- ********************************************************************************************* -->
+
+    <!-- service section start -->
+    <section class="services" id="services">
+            <h1 class="heading">our <span>services</span></h1>
+            <div class="box-container">
+
+                <div class="box">
+                    <center> <i class="fas fa-stethoscope"> </i>
+                        <h3>sonography</h3>
+                        <p>Explore our advanced sonography tests at Shiv Diagnostic Center for detailed and accurate imaging of internal organs.</p>
+                        <!-- <p class="price">Price: $100</p> -->
+                        <a href="#services" class="btn"
+                            onclick="showDialogservicemodal('sonograpgy', 'Explore our advanced sonography tests at Shiv Diagnostic Center for detailed and accurate imaging of internal organs. Our skilled technicians ensure accurate and comprehensive results, contributing to superior diagnostic services.')">learn more <span class="fas fa-chevron-right"></span></a></center>
+                </div>
+
+                <div class="box">
+                    <center> <i class="fas fa-wave-square"></i>
+                        <h3>doppler</h3>
+                        <p>Doppler tests at Shiv Diagnostic Center use ultrasound to assess blood flow through arteries and veins, aiding in the diagnosis of circulatory issues.</p>
+                        <!-- <p class="price">Price: $50</p> -->
+                        <a href="#services" class="btn"
+                            onclick="showDialogservicemodal('doppler', 'Doppler tests at Shiv Diagnostic Center use ultrasound to assess blood flow through arteries and veins, aiding in the diagnosis of circulatory issues. Our skilled professionals provide accurate and non-invasive assessments for comprehensive vascular health.')">learn more <span class="fas fa-chevron-right"></span></a></center>
+
+                </div>
+
+                <div class="box">
+                    <center><i class="fas fa-x-ray"></i>
+                        <h3>digital X-Ray</h3>
+                        <p>Shiv Diagnostic Center offers Digital X-Ray services, providing quick and accurate imaging for medical diagnoses.</p>
+                        <!-- <p class="price" scrollamount="3">Price: $200</p> -->
+                        <a href="#services" class="btn"
+                            onclick="showDialogservicemodal('digital X-Ray', 'Shiv Diagnostic Center offers Digital X-Ray services, providing quick and accurate imaging for medical diagnoses. Our advanced technology ensures high-resolution images, aiding physicians in delivering precise and timely healthcare solutions.')">learn more <span class="fas fa-chevron-right"></span></a></center>
+
+                </div>
+
+                <div class="box">
+                    <center><i class="fas fa-plug"></i>
+                        <h3>Digital OPG</h3>
+                        <p>Shiv Diagnostic Center offers Digital Orthopantomogram (OPG) tests, a digital dental imaging technique capturing a panoramic view of the upper and lower jaws.</p>
+                        <!-- <p class="price">Price: $150</p> -->
+                        <a href="#services" class="btn"
+                            onclick="showDialogservicemodal('Digital OPG', 'Shiv Diagnostic Center offers Digital Orthopantomogram (OPG) tests, a digital dental imaging technique capturing a panoramic view of the upper and lower jaws. This advanced diagnostic tool aids in comprehensive dental examinations for accurate assessments of oral health.')">learn more <span class="fas fa-chevron-right"></span></a></center>
+
+                </div>
+
+                <div class="box">
+                    <center><i class="fas fa-brain"></i>
+                        <h3>Neurology</h3>
+                        <p>Explore advanced neurological testing services at Shiv Diagnostic Center, offering state-of-the-art diagnostics for conditions affecting the nervous system.</p>
+                        <!-- <<p class="price">Price: $350</p> -->
+                        <a href="#services" class="btn"
+                            onclick="showDialogservicemodal('Neurology', 'Explore advanced neurological testing services at Shiv Diagnostic Center, offering state-of-the-art diagnostics for conditions affecting the nervous system. Our comprehensive neurology tests aid in accurate diagnosis and personalized treatment plans.')">learn more <span class="fas fa-chevron-right"></span></a></center>
+
+                </div>
+
+                <div class="box">
+                    <center><i class="fas fa-tint"> </i>
+                        <h3>Haemotology</h3>
+                        <p>Hematology tests at Shiv Diagnostic Center assess blood-related conditions. From complete blood count (CBC) to blood clotting evaluations.</p>
+                        <!-- <p class="price">Price: $250</p> -->
+                        <a href="#services" class="btn"
+                            onclick="showDialogservicemodal('Haemotology', 'Hematology tests at Shiv Diagnostic Center assess blood-related conditions. From complete blood count (CBC) to blood clotting evaluations, our tests provide crucial insights into overall health and detect disorders like anemia and leukemia.')">learn more <span class="fas fa-chevron-right"></span></a></center>
+
+                </div>
+
+            </div>
+            <div class="readmore">
+                <center><a href="./services_page.html" class="btn">Read more
+                        <span class="fas fa-chevron-right"></span></a></center>
+            </div>
+
+            <div id="servicemodal" class="servicemodal">
+                <!-- Modal content -->
+                <div class="servicemodal-content">
+                    <span class="servicemodalclose" onclick="closeDialogservicemodal()"> &times;</span>
+                    <center> <h2 class="servicemodaltitle" id="servicemodalTitle"></h2></center>
+                    <center> <p id="servicemodalContent"></p></center>
+                    <center><p id="servicemodalprice" class="servicemodalprice"> </p></center>
+                    <center> <a href="#footer" class="btn">contact Us<span
+                                class="fas fa-chevron-right"></span></a></center>
+
+                </div>
+            </div>
+
+        </section>
+    <!-- service section end -->
+
+    <!-- ********************************************************************************************* -->
+
+    <!-- doctors section start -->
+    <section class="doctors" id="doctors">
+
+      <h1 class="heading"> our <span>doctor's</span> </h1>
+      
+      <div class="box-container">
+      
+      <div class="box">
+      <img src="./images/doc1.jpg" style="border-color: var(--dark-purple); width: 12rem; height: 13rem;" alt="">
+      <h3>Dr. Antesh Gavit</h3>
+      <span>MBBS, DMRE</span> <br>
+      <span>(SONOLOGY & RADIOLOGY)</span>
+      <div class="share">
+      <a href="https://instagram.com/shivdiagnostic?igshid=MXhmdjR6dWs4YXcyNw==" target="_blank" class="fab fa-facebook-f"></a> 
+      <a href="https://instagram.com/shivdiagnostic?igshid=MXhmdjR6dWs4YXcyNw==" target="_blank" class="fab fa-twitter"></a> 
+      <a href="https://instagram.com/shivdiagnostic?igshid=MXhmdjR6dWs4YXcyNw==" target="_blank" class="fab fa-instagram"></a> 
+      <a href="https://instagram.com/shivdiagnostic?igshid=MXhmdjR6dWs4YXcyNw==" target="_blank" class="fab fa-linkedin"></a> 
+      </div>
+      </div>
+      
+      
+      <div class="box">
+      <img src="./images/doc2.jpg" style="width: 12rem; height: 13rem;"  alt="">
+      <h3>Dr. Nikhil Kolambe</h3>
+      <span>MBBS, DMRE</span> <br>
+      <span>(SONOLOGY & RADIOLOGY)</span>
+      <div class="share">
+      <a href="https://instagram.com/shivdiagnostic?igshid=MXhmdjR6dWs4YXcyNw==" target="_blank" class="fab fa-facebook-f"></a> 
+      <a href="https://instagram.com/shivdiagnostic?igshid=MXhmdjR6dWs4YXcyNw==" target="_blank" class="fab fa-twitter"></a> 
+      <a href="https://instagram.com/shivdiagnostic?igshid=MXhmdjR6dWs4YXcyNw==" target="_blank" class="fab fa-instagram"></a> 
+      <a href="https://instagram.com/shivdiagnostic?igshid=MXhmdjR6dWs4YXcyNw==" target="_blank" class="fab fa-linkedin"></a> 
+      </div>
+      </div>
+      
+      
+      <div class="box">
+      <img src="./images/doc3.jpg" style="border-color: var(--dark-purple); width: 12rem; height: 13rem;" alt="">
+      <h3>Dr. Pankaj Patil </h3>
+      <span>MD.DM</span> <br>
+      <span>(CARDIOLOGY)</span>
+      <div class="share">
+      <a href="https://instagram.com/shivdiagnostic?igshid=MXhmdjR6dWs4YXcyNw==" target="_blank" class="fab fa-facebook-f"></a> 
+      <a href="https://instagram.com/shivdiagnostic?igshid=MXhmdjR6dWs4YXcyNw==" target="_blank" class="fab fa-twitter"></a> 
+      <a href="https://instagram.com/shivdiagnostic?igshid=MXhmdjR6dWs4YXcyNw==" target="_blank" class="fab fa-instagram"></a> 
+      <a href="https://instagram.com/shivdiagnostic?igshid=MXhmdjR6dWs4YXcyNw==" target="_blank" class="fab fa-linkedin"></a> 
+      </div>
+      </div>
+
+      
+      <div class="box" style="margin-left: 18rem; width: 35rem;">
+      <img src="./images/doc4.jpg" style="width: 12rem; height: 13rem;"  alt="">
+      <h3>Dr. Jayant Gite</h3>
+      <span>MD.DM</span> <br>
+      <span>(CARDIOLOGY)</span>
+      <div class="share">
+      <a href="https://instagram.com/shivdiagnostic?igshid=MXhmdjR6dWs4YXcyNw==" target="_blank" class="fab fa-facebook-f"></a> 
+      <a href="https://instagram.com/shivdiagnostic?igshid=MXhmdjR6dWs4YXcyNw==" target="_blank" class="fab fa-twitter"></a> 
+      <a href="https://instagram.com/shivdiagnostic?igshid=MXhmdjR6dWs4YXcyNw==" target="_blank" class="fab fa-instagram"></a> 
+      <a href="https://instagram.com/shivdiagnostic?igshid=MXhmdjR6dWs4YXcyNw==" target="_blank" class="fab fa-linkedin"></a> 
+      </div>
+      </div>
+      
+      
+      <div class="box"  style="margin-left: 19rem; width: 35rem;">
+      <img src="./images/doc5.jpg" style="border-color: var(--dark-purple); width: 12rem; height: 13rem;" alt="">
+      <h3>Dr. Nikhil Bhakre</h3>
+      <span>M.D.</span> <br>
+      <span>(GENL, MED)</span>
+      <div class="share">
+      <a href="https://instagram.com/shivdiagnostic?igshid=MXhmdjR6dWs4YXcyNw==" target="_blank" class="fab fa-facebook-f"></a> 
+      <a href="https://instagram.com/shivdiagnostic?igshid=MXhmdjR6dWs4YXcyNw==" target="_blank" class="fab fa-twitter"></a> 
+      <a href="https://instagram.com/shivdiagnostic?igshid=MXhmdjR6dWs4YXcyNw==" target="_blank" class="fab fa-instagram"></a> 
+      <a href="https://instagram.com/shivdiagnostic?igshid=MXhmdjR6dWs4YXcyNw==" target="_blank" class="fab fa-linkedin"></a> 
+      </div>
+      </div>
+      
+      
+      <!-- <div class="box">
+      <img src="./imgs/doc-6.jpg" alt="">
+      <h3>john deo</h3>
+      <span>expert doctor</span>
+      <div class="share">
+      <a href="https://g.co/kgs/DeZWzd" target="_blank" class="fab fa-facebook-f"></a> 
+      <a href="https://g.co/kgs/DeZWzd" target="_blank" class="fab fa-twitter"></a> 
+      <a href="https://g.co/kgs/DeZWzd" target="_blank" class="fab fa-instagram"></a> 
+      <a href="https://g.co/kgs/DeZWzd" target="_blank" class="fab fa-linkedin"></a> 
+      </div>
+      </div> -->
+      
+      
+      </section>
+    <!-- doctors section end -->
+
+    <!-- ********************************************************************************************* -->
+
+    <!-- gallery section started -->
+    <section class="gallery_section" id="gallery_section">
+      <h1 class="heading" style="margin-top: -3rem;">Our<span> Gallary</span></h1>
+
+      <div class="gallery">
+        <a href="images/img11.jpeg" data-lightbox="mygallery"
+        ><img src="images/img11.jpeg" alt
+      /></a>
+      <a href="images/img12.jpeg" data-lightbox="mygallery"
+        ><img src="images/img12.jpeg" alt
+      /></a>
+      <a href="images/img13.jpeg" data-lightbox="mygallery"
+        ><img src="images/img13.jpeg" alt
+      /></a>
+      <a href="images/img14.jpeg" data-lightbox="mygallery"
+        ><img src="images/img14.jpeg" alt
+      /></a>
+     <!-- ************************* -->
+      <a href="./images/g6.jpg" data-lightbox="mygallery"
+      ><img src="./images/g6.jpg" alt
+    /></a>
+    <a href="./images/g1.jpg" data-lightbox="mygallery"
+    ><img src="./images/g1.jpg" alt
+  /></a>
+      <a href="./images/g7.jpg" data-lightbox="mygallery"
+        ><img src="./images/g7.jpg" alt
+      /></a>
+    
+      <a href="./images/g11.jpg" data-lightbox="mygallery"
+        ><img src="./images/g11.jpg" alt
+      /></a>
+
+     <!-- ************************* -->
+
+      <a href="./images/g10.jpg" data-lightbox="mygallery"
+        ><img src="./images/g10.jpg"alt
+      /></a>
+      <a href="./images/g5.jpg" data-lightbox="mygallery"
+        ><img src="./images/g5.jpg" alt
+      /></a>
+      <a href="./images/g3.jpg" data-lightbox="mygallery"
+        ><img src="./images/g3.jpg" alt
+      /></a>
+      <a href="./images/g4.jpg" data-lightbox="mygallery"
+        ><img src="./images/g4.jpg" alt
+      /></a>
+      </div>
+    </section>
+    <!-- gallery section end -->
+
+    <!-- ********************************************************************************************* -->
+
+    <!-- review section start -->
+    <section class="reviews" id="reviews">
+      <h1 class="heading">Client's <span>Review</span></h1>
+
+      <div class="box-container">
+        <div class="box">
+          <img src="./images/Mayur_Tambe.jpg" alt="" />
+          <h3>Mayur Tambe</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p class="text">
+            "Had a great experience at Shiv Diagnostic Center. The team was professional, and the process was smooth. I appreciated the detailed explanation of my results. A reliable place for health diagnostics."
+          </p>
+        </div>
+
+        <div class="box">
+          <img src="./images/Kajal.jpg" alt="" />
+          <h3>Kajal Salvi</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <p class="text">
+            "Shiv Diagnostic Center is my go-to for medical tests. The staff is super helpful and kind. The reports are easy to understand, and they take the time to answer any questions. Trustworthy service!"
+          </p>
+        </div>
+
+        <div class="box">
+          <img src="./images/Mayur Mourya.jpg" alt="" />
+          <h3>Mayur Mourya</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p class="text">
+            "I am impressed with Shiv Diagnostic Center's efficiency. From check-in to getting my results, everything was quick. The staff made me feel comfortable, and the facility is well-maintained. Great service overall!"
+          </p>
+        </div>
+
+        <div class="box">
+          <img src="./images/Samiksha_Narawade.jpg" alt="" />
+          <h3>Samiksha Narawade</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <p class="text">
+             "I want to thank Shiv Diagnosis Center for their excellent service. The staff was super friendly, and I got my test results quickly. They made the whole process easy and stress-free. Thank you, Shiv Diagnosis Center!" 
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- review section end -->
+
+    <!-- ********************************************************************************************* -->
+
+    <!-- booking section start  -->
+    <section class="book" id="book">
+      <h1 class="heading" style="margin-top: .8rem;">Book<span> Now</span></h1>
+
+      <div class="row">
+        <div class="image">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3767.338633744152!2d73.08134477418805!3d19.224068047309483!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7bff8663cd743%3A0x530c082f4c13aef1!2sshiv%20diagnostic%20center!5e0!3m2!1sen!2sin!4v1700321138479!5m2!1sen!2sin" width="500" height="407" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </div>
+
+<form action="" method="post">
+  <h3>Book Appointment</h3>
+  <input type="text" name="Name" placeholder="your name" class="box">
+  <input type="number" name="Contact" placeholder="your contact number" class="box">
+  <input type="email" name="Email" placeholder="your email" class="box">
+  <input type="date" name="Date" class="box">
+ <!-- <input type="submit" value="Book Now" onclick="book_appointment()" class="btn"> -->
+      <a href="#" class="submit_btn btn" onclick="book_appointment()" style="border-color: #940b92;">Book Now</a>
+</form>
+
+  <div id="bookmodal" class="bookmodal">
+          <!-- Modal content -->
+          <div class="bookmodal-content">
+              <span class="closebookmodal" onclick="bookmodalclose()">&times;</span>
+              <center><h2 class="modeltitle">please Login First</h2> </center>
+          </div>
+         </div> 
+</div>
+<!-- <span id="msg"></span> -->
+
+    </section>
+    <!-- booking section end  -->
+
+    <!-- ********************************************************************************************* -->
+
+    <!-- footer section start -->
+    <section class="footer" id="footer">
+      <div class="box-container">
+        <div class="box">
+          <h3>Quick <span>Links</span></h3>
+          <a href="#home"> <i class="fas fa-chevron-right"></i> Home</a>
+          <a href="#about"> <i class="fas fa-chevron-right"></i> About</a>
+          <a href="#services"> <i class="fas fa-chevron-right"></i> Services</a>
+          <a href="#doctors"> <i class="fas fa-chevron-right"></i> Doctors</a>
+          <a href="#gallery_section"> <i class="fas fa-chevron-right"></i> Gallery</a>
+          <a href="#reviews"> <i class="fas fa-chevron-right"></i> Reviews</a>
+          <a href="#book"> <i class="fas fa-chevron-right"></i> Book</a>
+        </div>
+
+        <div class="box">
+          <h3>Contact <span>Info</span></h3>
+          <a href="#"> <i class="fa-solid fa-phone"></i> +91 9594937775 </a>
+          <a href="#"> <i class="fa-solid fa-phone"></i> +91 9594937779 </a>
+          <a href="#"> <i class="fa-solid fa-phone"></i> +91 8600787958 </a>
+          <a href="#"
+            ><i class="fas fa-envelope"></i> shivdiagnostic2023@gmail.com</a
+          >
+          <a href="#"
+            ><i class="fas fa-map-marker-alt"></i> Shop No. 5 & 6 Ground Floor,
+            Shri Raviraj Co-op Housing Society, Jaihind Colony, Gupte Road,
+            Dombivali(W), Dist. Thane, India</a
+          >
+        </div>
+
+        <div class="box">
+          <h3>Follow <span>Us</span></h3>
+          <a href="https://instagram.com/shivdiagnostic?igshid=MXhmdjR6dWs4YXcyNw==" target="_blank"> <i class="fab fa-facebook"></i> Facebook </a>
+          <a href="https://instagram.com/shivdiagnostic?igshid=MXhmdjR6dWs4YXcyNw==" target="_blank"> <i class="fab fa-twitter"></i> Twitter </a>
+          <a href="https://instagram.com/shivdiagnostic?igshid=MXhmdjR6dWs4YXcyNw==" target="_blank"> <i class="fab fa-instagram"></i> Instagram </a>
+          <a href="https://instagram.com/shivdiagnostic?igshid=MXhmdjR6dWs4YXcyNw==" target="_blank"> <i class="fab fa-whatsapp"></i> Whatsapp </a>
+          <a href="https://instagram.com/shivdiagnostic?igshid=MXhmdjR6dWs4YXcyNw==" target="_blank"> <i class="fab fa-linkedin"></i> Linkedin </a>
+        </div>
+
+        <div class="box">
+          <h3>Pay <span>Online</span></h3>
+         <a href="" download>
+         <img src="./images/sdc_qr.jpg" alt="">
+        </a>
+        </div>
+      </div>
+
+      <div class="credits">
+        developed by
+        <span>
+          <a href="https://www.linkedin.com/in/snehal-krushna-bandal-514592267?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">snehal bandal</a>, 
+          <a href="https://instagram.com/payalmundhe_2728?igshid=MzMyNGUyNmU2YQ==" target="_blank">payal mundhe</a>, 
+          <a href="https://instagram.com/payaldongare_286?igshid=NGVhN2U2NjQ0Yg==" target="_blank">payal dongare</a>, 
+          <a href="https://www.linkedin.com/in/sanika-bhor-a3171526b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">sanika bhor</a></span> |
+        all rights reserved!
+      </div>
+    </section>
+    <!-- footer section end -->
+
+    <!-- ********************************************************************************************* -->
+
+    <!-- js files  -->
+    <script
+      src="https://kit.fontawesome.com/db13c8341f.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./script.js"></script>
+
+    <!--  modal script -->
+    <script>
+      //**************** service section script *******************
+      function showDialogservicemodal(title, content) {
+        document.getElementById("servicemodalTitle").innerText = title;
+        document.getElementById("servicemodalContent").innerText = content;
+        // document.getElementById("servicemodalprice").innerHTML = price;
+        document.getElementById("servicemodal").style.display = "block";
+      }
+
+      function closeDialogservicemodal() {
+        document.getElementById("servicemodal").style.display = "none";
+      }
+
+      //**************** about us section script *******************
+
+      function showabout() {
+        document.getElementById("aboutmodal").style.display = "block";
+      }
+
+      function closeabout() {
+        document.getElementById("aboutmodal").style.display = "none";
+      }
+
+
+      //**************** download report script *******************
+         function downloadreport() {
+            var modal = document.getElementById('downloadmodal');
+            modal.style.display = 'block';
+        }
+
+        function downloadclose() {
+            var modal = document.getElementById('downloadmodal');
+            modal.style.display = 'none';
+        }
+
+
+        
+
+        
+      //**************** download report script *******************
+         function book_appointment() {
+            var modal = document.getElementById('bookmodal');
+            modal.style.display = 'block';
+        }
+
+        function bookmodalclose() {
+            var modal = document.getElementById('bookmodal');
+            modal.style.display = 'none';
+        }
+
+    </script>
+
+  
+
+  </body>
+</html>

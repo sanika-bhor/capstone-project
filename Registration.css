@@ -1,0 +1,257 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+:root {
+  --pr-color: #2888e8ff;
+  --green: #16a085;
+  --light-color: #777;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+section {
+  padding: 2rem 9%;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Lexend Deca", sans-serif;
+}
+
+h1 {
+  font-size: 4.8rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+p {
+  font-size: 1.6rem;
+  letter-spacing: 0.08rem;
+}
+
+button,
+.btn,
+input[type="submit"] {
+  border: 0.1rem solid #fff;
+  outline: none;
+  padding: 0.6rem 1.2rem;
+  font-size: 1.7rem;
+  text-transform: capitalize;
+  letter-spacing: 0.05rem;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* registration page styling   */
+
+.reg-header {
+  height: 100vh;
+  position: relative;
+}
+
+.container {
+  height: 10vh;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  position: relative;
+  z-index: 1;
+}
+
+.header {
+  padding: 1.5rem 9%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+}
+
+.header .logo {
+  font-size: 2.5rem;
+  color: var(--green);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.header .logo span {
+  color: var(--black);
+}
+
+.header .logo i {
+  color: var(--green);
+}
+
+.header .navbar {
+  margin-right: 5rem;
+  text-decoration: none;
+}
+.header .navbar a {
+  font-size: 1.6rem;
+  color: var(--light-color);
+  margin-left: 2rem;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+.header .navbar a:hover {
+  color: var(--green);
+}
+
+/* register page style */
+main {
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.reg,
+.login {
+  min-height: 30rem;
+  min-width: 40vw;
+  position: relative;
+  z-index: 1;
+}
+
+.grid-two--column {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.form-text {
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)),
+    url("./imgs/home1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding: 3rem 2rem;
+}
+
+.login .form-text {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)),
+    url("./imgs/home2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.form-text p {
+  width: 30ch;
+  text-align: center;
+  margin: 2rem 0 3rem 0;
+}
+
+.form-text button {
+  background-color: #fff;
+  color: #000;
+}
+
+.form-text button:hover {
+  background-color: transparent;
+  color: #fff;
+}
+
+.reg-form,
+.login-form {
+  width: 100%;
+  min-height: 45vh;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.reg-form p,
+.login-form p {
+  margin: 1rem 0 0.7rem 0;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1.4rem;
+  margin: 1rem 0 0.6rem 0;
+}
+
+.social-icons a {
+  text-decoration: none;
+}
+
+.social-icons a i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--green);
+}
+
+.fa-brands {
+  width: 4rem;
+  height: 4rem;
+  border: 0.1rem solid #ccc;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6rem;
+}
+
+input {
+  width: 20rem;
+  margin: 0.7rem 0;
+  border: none;
+  background-color: #e8e8e8;
+  padding: 1rem 1.8rem;
+  letter-spacing: 0.06rem;
+}
+
+input[type="submit"] {
+  margin-top: 1rem;
+  min-width: 10rem;
+  background-color: var(--green);
+  color: #fff;
+}
+
+input[type="submit"]:hover {
+  background-color: transparent;
+  color: var(--light-color);
+  border: 0.1rem solid #16a085;
+}
+
+.reg:not(.login-section--display) {
+  display: none;
+}
+
+.login-section--display .reg {
+  display: none;
+}
+.login-section--display .login {
+  display: none;
+}
