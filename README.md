@@ -26,4 +26,4 @@ To get started with the "Shiv Diagnostic Center" project, follow these steps:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/shiv-diagnostic-center.git
+   https://github.com/sanika-bhor/capstone-project.git
