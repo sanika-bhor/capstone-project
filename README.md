@@ -6,6 +6,8 @@
 
 The "Shiv Diagnostic Center" project proposes the development of an advanced pathology laboratory management system tailored for "Shiv Diagnostic Center". The system will include a comprehensive database to securely store patient information, medical test results, and diagnostic reports. 
 
+
+
 ## Key Features
 
 - **Secure Database**: A robust and secure database to store patient information, medical test results, and diagnostic reports.
